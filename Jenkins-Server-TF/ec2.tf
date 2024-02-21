@@ -1,4 +1,4 @@
-resource "aws_instance" "ec2" {
+resource "aws_instance" "ec" {
   ami                    = data.aws_ami.ami.image_id
   instance_type          = "t2.large"
   key_name               = var.key-name
